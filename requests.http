@@ -1,0 +1,30 @@
+
+#### get products index
+GET http://localhost:3000/products.json
+### post products create
+POST http://localhost:3000/products.json
+Content-Type: application/json
+
+{
+  "name": "dog bone",
+  "price": 3,
+  "description": "yummy dog treats",
+  "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC2bTFjh09jGWExkEVjhVLdUl9fHmIlBNEGw&usqp=CAU" 
+}
+
+### get photos show
+GET http://localhost:3000/products/2.json
+
+### patch photos update
+PATCH http://localhost:3000/products/2.json
+Content-Type: application/json
+
+{
+  "name": "large chair",
+  "price": 3,
+  "description": "you sit big",
+  "image_url": "https://www.gannett-cdn.com/authoring/2019/07/06/NGAR/ghows-WT-8c62a76c-d910-3b14-e053-0100007f5d07-bf4717a9.jpeg"
+}
+
+### delete products
+DELETE http://localhost:3000/products/4
